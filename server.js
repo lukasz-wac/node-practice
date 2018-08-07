@@ -45,6 +45,10 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs');
+});
+
 app.get('/bed', (req, res) => {
   res.send({
     error: 'Page not found :('
